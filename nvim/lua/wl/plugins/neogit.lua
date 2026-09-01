@@ -1,0 +1,14 @@
+return {
+  {
+    'NeogitOrg/neogit',
+    lazy = true,
+    dependencies = {
+      'sindrets/diffview.nvim',
+      'nvim-telescope/telescope.nvim',
+    },
+    cmd = 'Neogit',
+    keys = {
+      { '<leader>ng', '<cmd>Neogit<cr>', desc = 'Show Neogit UI' },
+    },
+  },
+}

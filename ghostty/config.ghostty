@@ -1,0 +1,7 @@
+custom-shader = shaders/cursor_sweep.glsl
+
+command = $SHELL -lic 'exec fish'
+shell-integration = fish
+keybind = global:cmd+backquote=toggle_quick_terminal
+font-size = 14
+theme = TokyoNight Storm
