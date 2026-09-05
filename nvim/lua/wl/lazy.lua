@@ -24,3 +24,5 @@ require("lazy").setup({
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
 })
+
+vim.cmd.colorscheme("kanagawa-wave")

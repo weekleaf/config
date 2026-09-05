@@ -14,7 +14,7 @@ function fish_prompt
 
     set -l cwd (prompt_pwd -D 1)
     set -l vcs (fish_vcs_prompt)
-    set -l symbol '>'
+    set -l symbol '›'
  
     set -l prompt_status (__fish_print_pipestatus '[' ']' '|' "$status_color" "$statusb_color" $last_pipestatus)
 
@@ -31,3 +31,5 @@ function fish_prompt
     echo
     echo -n -s $symbol ' '
 end
+
+alias v='nvim'

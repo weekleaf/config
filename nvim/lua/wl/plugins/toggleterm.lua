@@ -13,6 +13,7 @@ return {
     opts = {
       direction = "float",
       close_on_exit = false,
+      shell = "$SHELL -lic 'exec fish'",
       float_opts = {
         border = "rounded",
         width = function()
