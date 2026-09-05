@@ -3,4 +3,4 @@ custom-shader = shaders/cursor_warp.glsl
 command = $SHELL -lic 'exec fish'
 shell-integration = fish
 keybind = global:cmd+backquote=toggle_quick_terminal
-theme = Kanagawa Wave
+theme = koda-dark

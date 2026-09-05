@@ -25,4 +25,4 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-vim.cmd.colorscheme("kanagawa-wave")
+vim.cmd.colorscheme("koda")
