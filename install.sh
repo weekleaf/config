@@ -4,7 +4,7 @@ set -u
 
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 status=0
-configs='nvim ghostty karabiner fish'
+configs='nvim ghostty karabiner fish tmux'
 
 for config in $configs; do
     installer="$SCRIPT_DIR/$config/install.sh"
