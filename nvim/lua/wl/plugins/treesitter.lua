@@ -1,15 +1,31 @@
 return {
   {
     'nvim-treesitter/nvim-treesitter',
+    lazy = false,
     build = ':TSUpdate',
-    main = 'nvim-treesitter.config',
-    opts = {
-      auto_install = true,
-      ensure_installed = { "c", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html" },
-      sync_install = false,
-      highlight = { enable = true },
-      indent = { enable = true },
-    },
-    opts_extend = { "ensure_installed" },
+
+    config = function()
+      require('nvim-treesitter').install({
+        'c',
+        'vim',
+        'vimdoc',
+        'query',
+        'cpp',
+        'python',
+        'rust',
+      })
+
+      vim.api.nvim_create_autocmd('FileType', {
+        callback = function(args)
+          pcall(vim.treesitter.start, args.buf)
+        end,
+      })
+    end,
+  },
+  {
+    'nvim-treesitter/nvim-treesitter-context',
+    dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    event = { "BufReadPost", "BufNewFile" },
+    opts = {},
   },
 }
