@@ -57,11 +57,7 @@
 | Key | Mode | Action |
 | --- | --- | --- |
 | `f` | dashboard | Find file with Telescope |
-| `n` | dashboard | Create a new buffer and enter insert mode |
 | `g` | dashboard | Find text with Telescope live grep |
-| `r` | dashboard | Open a recent file |
-| `c` | dashboard | Find a file in the Neovim config directory |
-| `L` | dashboard | Open Lazy.nvim |
 | `q` | dashboard | Quit Neovim |
 
 ### Snacks Scope
@@ -155,18 +151,3 @@
 | `<Tab>` | i | Accept suggestion |
 | `<C-j>` | i | Accept word |
 | `<C-]>` | i | Clear suggestion |
-
-### Claude Code (`<leader>a`)
-
-| Key | Mode | Action |
-| --- | --- | --- |
-| `<leader>ac` | n | Toggle Claude (with `--dangerously-skip-permissions`) |
-| `<leader>af` | n | Focus Claude |
-| `<leader>ar` | n | Resume Claude |
-| `<leader>aC` | n | Continue Claude |
-| `<leader>am` | n | Select model |
-| `<leader>ab` | n | Add current buffer |
-| `<leader>as` | v | Send selection to Claude |
-| `<leader>as` | tree | Add file to Claude |
-| `<leader>aa` | n | Accept diff |
-| `<leader>ad` | n | Deny diff |
