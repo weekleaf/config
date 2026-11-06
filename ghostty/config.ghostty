@@ -1,6 +1,8 @@
 custom-shader = shaders/cursor_warp.glsl
 
 command = $SHELL -lic 'exec fish'
+macos-option-as-alt = true
+macos-non-native-fullscreen = true
 shell-integration = fish
 keybind = global:cmd+backquote=toggle_quick_terminal
 theme = koda-dark
