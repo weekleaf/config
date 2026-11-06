@@ -26,6 +26,10 @@ return {
     'nvim-treesitter/nvim-treesitter-context',
     dependencies = { 'nvim-treesitter/nvim-treesitter' },
     event = { "BufReadPost", "BufNewFile" },
-    opts = {},
+    opts = {
+      max_line = 5,
+      trim_scope= 'outer',
+      mode = 'cursor',
+    },
   },
 }
